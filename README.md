@@ -15,11 +15,11 @@
 ##用法
 * 加载页面有2种方式：
     * 第一种方式支持循环调用，即需加载的内容里还有可点击的.ajax-load
-        ```html
+        ```
         <a class="ajax-load" data-href="/page/login.html" data-target="content" id="to-login"></a>
         ```
     * 第二种方式直接将data-href属性加载到id为content的元素中，并忽略加载到的内容里的.ajax-load，此种方式更直观，效率更高，且多数情况下够用
-        ```html
+        ```
         <a class="ajax-load direct" data-href="/page/aaa.html" id="direct-default"></a>
         ```
 * 封装的ajax使用：由于使用了es6的析构表达式赋值，所以最简单及最复杂的方式分别如下：
@@ -33,7 +33,7 @@
     }, "GET", "JSON", "application/json"]);
     ```
 * 列表、分页、查询
-    ```html
+    ```
     <!--查询表单-->
     <form id="records-query"><input type="text" name="code"></form>
     <!--表格-->
