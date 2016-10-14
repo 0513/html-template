@@ -15,10 +15,12 @@
 ##用法
 * 加载页面有2种方式：
     * 第一种方式支持循环调用，即需加载的内容里还有可点击的.ajax-load
+        
         ```
         <a class="ajax-load" data-href="/page/login.html" data-target="content" id="to-login"></a>
         ```
     * 第二种方式直接将data-href属性加载到id为content的元素中，并忽略加载到的内容里的.ajax-load，此种方式更直观，效率更高，且多数情况下够用
+        
         ```
         <a class="ajax-load direct" data-href="/page/aaa.html" id="direct-default"></a>
         ```
@@ -33,6 +35,7 @@
     }, "GET", "JSON", "application/json"]);
     ```
 * 列表、分页、查询
+    
     ```
     <!--查询表单-->
     <form id="records-query"><input type="text" name="code"></form>
@@ -63,6 +66,7 @@
     }
     ```
 * 表单填充
+    
     ```javascript
     $.fillForm("form-id", data); //data属性名及form表单的name匹配
     ```
