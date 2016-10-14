@@ -1,0 +1,36 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "dora --plugins proxy,webpack,webpack-hmr?enableJs=false,browser-history?index=./index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "atool-build": "^0.7.1",
+    "atool-test-mocha": "^0.1.4",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "dora": "0.3.x",
+    "dora-plugin-browser-history": "^0.1.1",
+    "dora-plugin-livereload": "^0.4.0",
+    "dora-plugin-proxy": "^0.6.1",
+    "dora-plugin-webpack": "0.6.x",
+    "dora-plugin-webpack-hmr": "^0.1.0",
+    "file-loader": "^0.8.5",
+    "glob": "^7.0.5",
+    "jquery": "^2.2.4",
+    "lodash": "^4.13.1",
+    "onchange": "^2.5.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.10.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.9.0"
+  }
+}

@@ -1,0 +1,59 @@
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.none{
+	display:none !important;
+}
+.not-allowed, .not-allowed a{
+	cursor: not-allowed !important;
+}
+.one-line {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.center{
+	text-align:center;
+}
+a, .ajax-load{
+	cursor:pointer;
+}
+header{
+    height:60px;
+    border-bottom:2px solid ;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+header .logo{
+    height:100%;
+}
+
+.ajax-loading{
+	z-index: 1051; /**bootstrap弹出框为1050*/
+	position: fixed; /**不为fixed时，覆盖不了bootstrap弹出层*/
+	display:none;
+}
+.ajax-loading .ajax-bg{
+	position: fixed;
+	background: rgba(0,0,0,.2);
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+}
+.ajax-loading .ajax-img{
+	position: fixed;
+	background: url('../image/loading.gif') center no-repeat;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+/**修正input标签z-index问题*/
+.input-group .form-control {
+  z-index: 0;
+}
